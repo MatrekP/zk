@@ -3,4 +3,12 @@ Tema 45
 Nalezeni k-teho nejvetsiho prvku v posloupnosti
 """
 
+from random import randrange
 
+seznam = []
+for i in range(0,10):
+    seznam.append(randrange(1,100))
+print(seznam)
+
+seznam.sort()
+print(seznam)
