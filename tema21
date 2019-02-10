@@ -29,14 +29,11 @@ b = q*r
 print(a)
 print(b)
 
-# delitel
-if a == 0:
-  return b
-while b != 0:
-  if a > b:
-    a = a - b
+def delitel(a, b):
+  if b == 0:
+    return a
   else:
-    b = b - a
-  return a
+    return delitel(b, a % b)
+delitel(a,b)
 print(a)
 print(b)
