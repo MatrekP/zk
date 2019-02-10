@@ -1,0 +1,12 @@
+"""
+Tema 21
+Operace se zlomky: soucet, nasobeni, deleni, kraceni
+
+ve tvaru:
+p/q operator r/s
+"""
+
+p = 4
+q = 2
+r = 3
+s = 2
