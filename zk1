@@ -16,3 +16,17 @@ a = p*s + q*r
 b = q*s
 print(a)
 print(b)
+
+# nasobeni
+a = p*r
+b = q*s
+print(a)
+print(b)
+
+# deleni
+a = p*s
+b = q*r
+print(a)
+print(b)
+
+# delitel
