@@ -3,7 +3,7 @@ Tema 21
 Operace se zlomky: soucet, nasobeni, deleni, kraceni
 
 ve tvaru:
-p/q operator r/s
+a/b = p/q operator r/s
 """
 
 p = 4
