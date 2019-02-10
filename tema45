@@ -10,5 +10,9 @@ for i in range(0,10):
     seznam.append(randrange(1,100))
 print(seznam)
 
+
 seznam.sort()
 print(seznam)
+
+
+print(seznam[0])
