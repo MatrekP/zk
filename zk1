@@ -10,3 +10,9 @@ p = 4
 q = 2
 r = 3
 s = 2
+
+# soucet
+a = p*s + q*r
+b = q*s
+print(a)
+print(b)
