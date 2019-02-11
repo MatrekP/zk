@@ -5,7 +5,6 @@ Nalezeni k-teho nejvetsiho prvku v posloupnosti
 
 from random import randrange
 
-
 # zadani vstupu se zkouskou spravnosti vstupu
 try:
     n = int(input("pocet prvku: "))
@@ -16,16 +15,16 @@ except ValueError:
     print("Spatny vstup!")
     exit(1)
 
-
 # zkontrolovani spravnosti oboru hodnot vstupu s vytvorenim posloupnosti a nalezením k-teho nejvetsiho prvku
 if n > 0 and k > 0 and k <= n and min > 0 and max > 0:
     seznam = []
     for i in range(0,n):
         seznam.append(randrange(min, max))
-    print(seznam)
+    print('seznam: {0}'.format(seznam))
     seznam.sort()
-    print(seznam)
-    print(seznam[-k])
-    print("Odpocivej v pokoji.")
+    print('posloupnost: {0}'.format(seznam))
+    print('{0}. nejvetsi prvek posloupnosti je {1}.'.format(k, seznam[-k]))
+    print("Pekny den.")
 else:
     print("Chybny vstup!")
+    exit(1)
