@@ -9,12 +9,12 @@ a/b = p/q operator r/s
 
 def operace(p, q, r, s):
     """
-
+    Zjistuje, zda se nedeli nulou, a vola jednotlive operace se zlomky
     :param p:
     :param q:
     :param r:
     :param s:
-    :return:
+    :return: nic nevraci
     """
     if q == 0 or s == 0:
         print("Deleni nulou!")
@@ -32,12 +32,12 @@ def operace(p, q, r, s):
 
 def soucet(p, q, r, s):
     """
-
+    Scita p/q a r/s a krati tvar vysledneho zlomku
     :param p:
     :param q:
     :param r:
     :param s:
-    :return:
+    :return: a/b nebo a jestlize b = 1
     """
     a = p*s + q*r
     b = q*s
@@ -52,12 +52,12 @@ def soucet(p, q, r, s):
 
 def nasobeni(p, q, r, s):
     """
-
+    Nasobi p/q a r/s a krati tvar vysledneho zlomku
     :param p:
     :param q:
     :param r:
     :param s:
-    :return:
+    :return: a/b nebo a jestlize b = 1
     """
     a = p*r
     b = q*s
@@ -72,12 +72,12 @@ def nasobeni(p, q, r, s):
 
 def deleni(p, q, r, s):
     """
-
+    Deli p/q a r/s a krati tvar vysledneho zlomku
     :param p:
     :param q:
     :param r:
     :param s:
-    :return:
+    :return: a/b nebo a jestlize b = 1
     """
     a = p*s
     b = q*r
@@ -92,10 +92,10 @@ def deleni(p, q, r, s):
 
 def kraceni(a, b):
     """
-
+    Urcuje nejvetsi spolecny delitel
     :param a:
     :param b:
-    :return:
+    :return: nejvetsi spolecny delitel a, b
     """
     if b == 0:
         return a
