@@ -24,7 +24,7 @@ if n > 0 and k > 0 and k <= n and min > 0 and max > 0:
     seznam.sort()
     print('posloupnost: {0}'.format(seznam))
     print('{0}. nejvetsi prvek posloupnosti je {1}.'.format(k, seznam[-k]))
-    print("Pekny den.")
 else:
     print("Chybny vstup!")
     exit(1)
+print("Pekny den.")
