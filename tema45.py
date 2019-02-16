@@ -10,20 +10,20 @@ try:
     n = int(input("pocet prvku: "))
     k = int(input("k-ty nejvetsi prvek: "))
     min = int(input("minimum: "))
-    max = int(input("maximum: "))
+    max = int(input("maximum: ")) + 1
 except ValueError:
     print("Spatny vstup!")
     exit(1)
 
 # zkontrolovani spravnosti oboru hodnot vstupu s vytvorenim posloupnosti a nalezením k-teho nejvetsiho prvku
-if n > 0 and k > 0 and k <= n and min > 0 and max > 0:
+if n > 0 and k > 0 and k <= n and min < max:
     seznam = []
     for i in range(0,n):
         seznam.append(randrange(min, max))
-    print('seznam: {0}'.format(seznam))
+    print('seznam: {}'.format(seznam))
     seznam.sort()
-    print('posloupnost: {0}'.format(seznam))
-    print('{0}. nejvetsi prvek posloupnosti je {1}.'.format(k, seznam[-k]))
+    print('posloupnost: {}'.format(seznam))
+    print('{}. nejvetsi prvek posloupnosti je {}.'.format(k, seznam[-k]))
 else:
     print("Spatny vstup!")
     exit(1)
