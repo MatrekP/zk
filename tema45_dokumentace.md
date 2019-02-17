@@ -1,4 +1,6 @@
+Zadání:
 Téma 45 – Nalezení k-tého největšího prvku v posloupnosti
+Řešení:
 K nalezení k-tého největšího prvku v posloupnosti stačí takovou posloupnost získat, seřadit ji podle velikosti a vytisknout hodnotu prvku na správné pozici. Při psaní svého programu vycházím z předpokladu, že obor hodnot posloupnosti je množina přirozených čísel.
 
 Program je interaktivní a po spuštění vyžaduje od uživatele zadání 4 parametrů v tomto pořadí: počet prvků v posloupnosti n, kolikátý k-tý největší prvek má být nalezen, minimální hodnoty prvku min a maximální hodnoty prvku max. Jestliže uživatel zadá jiná než celá čísla, program skončí s chybou 1.
@@ -39,10 +41,10 @@ if n > 0 and k > 0 and k <= n and min < max:
     seznam = []
     for i in range(0,n):
         seznam.append(randrange(min, max))
-    print('seznam: {}'.format(seznam))
+    print("seznam: {}".format(seznam))
     seznam.sort()
-    print('posloupnost: {}'.format(seznam))
-    print('{}. nejvetsi prvek posloupnosti je {}.'.format(k, seznam[-k]))
+    print("posloupnost: {}".format(seznam))
+    print("{}. nejvetsi prvek posloupnosti je {}.".format(k, seznam[-k]))
 else:
     print("Spatny vstup!")
     exit(1)
