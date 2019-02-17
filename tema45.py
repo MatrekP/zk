@@ -20,10 +20,10 @@ if n > 0 and k > 0 and k <= n and min < max:
     seznam = []
     for i in range(0,n):
         seznam.append(randrange(min, max))
-    print('seznam: {}'.format(seznam))
+    print("seznam: {}".format(seznam))
     seznam.sort()
-    print('posloupnost: {}'.format(seznam))
-    print('{}. nejvetsi prvek posloupnosti je {}.'.format(k, seznam[-k]))
+    print("posloupnost: {}".format(seznam))
+    print("{}. nejvetsi prvek posloupnosti je {}.".format(k, seznam[-k]))
 else:
     print("Spatny vstup!")
     exit(1)
