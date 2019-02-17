@@ -18,6 +18,7 @@ def operace(p, q, r, s):
     """
     if q == 0 or s == 0:
         print("Deleni nulou!")
+        exit(1)
     else:
         print("soucet: ", end="")
         print(soucet(p, q, r, s))
@@ -25,6 +26,7 @@ def operace(p, q, r, s):
         print(nasobeni(p, q, r, s))
         if r == 0:
             print("Deleni nulou!")
+            exit(1)
         else:
             print("deleni: ", end="")
             print(deleni(p, q, r, s))
